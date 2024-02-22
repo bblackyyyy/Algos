@@ -1,0 +1,33 @@
+
+Treść zadania
+
+Załoga statku Enterprise dotarła na Ferenginar. Ferengi to trochę chciwa rasa kupców. Ich miasta są podzielone na kwadratowe dystrykty i nie lubią, gdy marnuje się przestrzeń. Z tego powodu starają się w optymalny sposób rozmieszczać w swoich dystryktach budynki mieszkalne. Mają też pewne upodobania względem budowli. Każdy z nich wygląda tak samo. Zawsze składa się z 3 jednakowych kwadratowych pomieszczeń ułożonych obok siebie w kształcie litery L (standard: kuchnia, salon, sypialnia; Kapitan Kirk nie dociekał gdzie załatwiają potrzeby higieniczne). W każdym dystrykcie znajduje się także teleport, z którego można się dostać do sąsiednich dystryktów. Zajmuje on tyle samo miejsca co pojedyncze pomieszczenie mieszkalne. Ferengi zadbali też o to, by każdy budynek mieszkalny znajdował się w sąsiedztwie budynku z zaopatrzeniem (który także jest 3-pomieszczeniowy w kształcie litery L). Zapewnili to sobie umieszczając zaopatrzenie w centrum dystryktu, a następnie dzieląc dystrykt na mniejsze kwadraty i stosując tę zasadę dla otrzymanych poddystryktów. Dokonywali podziału, aż do otrzymania poddystryktów obejmujących co najwyżej 5 całych budynków.
+
+Nie zawsze jednak udaje im się rozmieścić budynki idealnie i czasami w dystrykcie można znaleźć kilka bezsensownie niezagospodarowanych przestrzeni. Czyni to wielkie spustoszenie w małych ferengijskich duszach. Mimo tak dużego zaawansowania technologicznego nie wykształciła się w nich zbyt mocno zdolność wyobraźni przestrzennej. Poprosili więc o pomoc Kapitana Kirka w ustaleniu optymalnego rozmieszczenia budynków dla dowolnego dystryktu w zależności od ustawienia teleportu przy jednoczesnym zachowaniu zasad związanych z zaopatrzeniem.
+Wejście:
+
+Na wejściu program otrzyma liczbę naturalną n, oznaczającą liczbę dystryktów, dla których należy dokonać obliczeń. W następnych liniach znajdzie się n zestawów danych, z których każdy składa się z 4 liczb naturalnych m, x, y, p, gdzie m jest rozmiarem dystryktu (dystrykt 1x1 zajmuje miejsce pojedynczego pomieszczenia), x oraz y oznaczają współrzędne ustawienia przystanku w dystrykcie, a p jest liczbą budynków, po której znajduje się p par liczb naturalnych ze współrzędnymi.
+
+1<=n<=10000
+m=2k, 0<k<14
+0<=x,y<=m
+1<=p<=m2
+Wyjście:
+
+Na wyjściu dla każdego budynku, kryjącego się pod podanymi współrzędnymi należy wyznaczyć jego ułożenie, podając współrzędne pozostałych dwóch pomieszczeń należących do tego budynku. Każda para współrzędnych ma zostać wyświetlona w kolejności leksykograficznej.
+Przykład:
+Wejście:
+
+1
+8 0 2 3
+4 0
+0 0
+7 6
+
+Wyjście:
+
+4 1 5 0
+0 1 1 0
+6 7 7 7
+
+UWAGA! Zadanie ma zostać zrealizowane metodą dziel i zwyciężaj.
